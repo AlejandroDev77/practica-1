@@ -1,0 +1,15 @@
+<div class="card-grafica">
+
+    <div class="canvas-preview">
+        <img [style.filter]="filtroCss()" src="https://www.shutterstock.com/image-vector/idyllic-landscape-featuring-rolling-green-260nw-2665713155.jpg" alt="Imagen de vista previa">
+
+    <div class="controles">
+        <label> Brillo : {{brillo()}}</label>
+        <input type="range" min="0" max="200" (imput)="actualizar(brillo,$event)">
+
+       
+
+
+    </div>
+    </div>
+</div>
