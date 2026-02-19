@@ -1,3 +1,4 @@
+
 <div class="card-grafica">
 
     <div class="canvas-preview">
@@ -5,7 +6,16 @@
 
     <div class="controles">
         <label> Brillo : {{brillo()}}</label>
-        <input type="range" min="0" max="200" (imput)="actualizar(brillo,$event)">
+        <input type="range" min="0" max="200" (input)="actualizar('brillo',$event)">
+        <label> Contraste : {{contraste()}} </label>
+        <input type="range" min="0" max="200" (input)="actualizar('contraste',$event)">
+        <label> Blur : {{blur()}} </label>
+        <input type="range" min="0" max="200" (input)="actualizar('blur',$event)">
+        <button (click)="convertirBlancoNegro()">Blanco y  negro</button>
+        <button (click)="restablecerblancoNegro()">restablecer</button>
+
+
+
 
        
 
